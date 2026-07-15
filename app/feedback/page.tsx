@@ -1,0 +1,3 @@
+import { Footer, Header, PageHero } from "../components";
+import { products } from "../data";
+export default function Feedback() { return <main><Header /><PageHero eyebrow="Product feedback" title="Choose your product." copy="Each product has its own feedback page and permanent URL. Select yours below to begin." image={false} /><section className="section feedback-page"><div className="feedback-link-grid">{products.map(p => <a href={`/feedback/${p.slug}`} key={p.slug}><div className="feedback-product-image" style={{ backgroundPosition: p.pos }} /><span>Feedback for</span><h2>{p.name}</h2><p>Start feedback →</p></a>)}</div></section><Footer /></main>; }

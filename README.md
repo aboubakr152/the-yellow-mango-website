@@ -9,4 +9,4 @@ npm install
 npm run dev
 ```
 
-The website uses Next.js with Vinext and includes dedicated product feedback routes for QR codes.
+Built with Next.js. Dedicated product feedback routes provide stable URLs for product-specific QR codes.
